@@ -7,3 +7,51 @@
         display: flex;
     }
 }
+@media screen and (max-width: 1200px) {
+  
+  #experience .about-containers {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  
+  #experience .details-container {
+    width: 45%; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+ 
+  #experience .details-container {
+    width: 100%;
+  }
+  
+  #experience {
+    height: fit-content; /* Allow section to grow very long */
+    padding-bottom: 4rem; /* Space for the arrow */
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+
+    #profile .section__pic-container {
+        width: 275px;        
+        margin: 0 auto 2rem; 
+    }
+
+    
+    #profile .section__pic-container img {
+        width: 275px;       
+        height: 275px;
+      
+    }
+    
+    
+    #profile {
+        height: 83vh;        
+        margin-bottom: 0;
+    }
+}

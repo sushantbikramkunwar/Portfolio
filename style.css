@@ -140,3 +140,258 @@ transform: rotate(-45deg) translate(10px, -5px);
 }
 
 /* SECTIONS */
+section{
+    padding: 4vh;
+    height: 96vh;
+    margin: 0 10rem ;
+    box-sizing: border-box;
+    min-height: fit-content;
+
+}
+
+.section-container {
+    display: flex;
+}
+
+/* Profile Section */
+
+#profile .section__pic-container img {
+    width: 400px;         /* Fixed width */
+    height: 400px;        /* Fixed height (must match width for a circle) */
+    border-radius: 50%;   /* The magic number for a circle */
+    object-fit: cover;    /* Ensures the photo fills the circle without stretching */
+    border: none;         /* Removes any pre-existing borders */
+    
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#profile .section__pic-container img {
+    border-radius: 50%; /* Turns a square photo into a circle */
+    border: none;       /* Ensures no actual border line exists */
+    
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 18vh;
+
+}
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin:auto 0 ;
+
+}
+
+.section__text
+{
+    align-self: center;
+    text-align: center;
+}
+.section__text p{
+    font-weight: 600;
+    
+}
+
+.section__text__p1{
+    text-align: center;
+
+}
+.section__text__p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+/* ICONS */
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+/* Buttons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover
+.btn-color-2:hover{
+    cursor: pointer;
+}
+.btn-color-1,
+.btn-color-2:hover{
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover{
+    background: rgb(0, 0, 0);
+
+}
+
+.btn-color-2{
+    background: none;
+
+}
+
+.btn-color-2:hover{
+    border: rgb(255, 255, 255) 0.1rem solid ;
+}
+.btn-container{
+    gap: 1rem);
+}
+
+ /* -------------------------- */
+/* ABOUT SECTION        */
+/* -------------------------- */
+
+#about {
+    position: relative;
+    height: 96vh; /* Fits on one screen */
+}
+
+/* Main Container: Puts Image (Left) and Details (Right) Side-by-Side */
+.section-container {
+    display: flex;
+    gap: 4rem;
+    height: 80%;
+    align-items: center;  /* Vertically centers image and text */
+    justify-content: center;
+}
+ 
+/* Left Side: Profile Picture */
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    flex-shrink: 0; /* Prevents image from getting squished */
+}
+
+/* Right Side: Wrapper for the Boxes and Text */
+.about-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* STACKS boxes on top of text */
+}
+
+/* The Row of Two Boxes (Experience & Education) */
+.about-containers {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+/* Individual Box Styling */
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: 1px solid rgb(163, 163, 163);
+    text-align: center;
+}
+
+/* The Description Text */
+.text-container {
+    text-align: justify; /* Makes paragraph text look neat */
+}
+
+/* Profile Image Styling */
+.about-pic {
+    border-radius: 2rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Arrow Icon Position */
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+/* EXPERIENCE SECTION SPECIFICS */
+
+#experience {
+  position: relative;
+}
+
+/* Enhancing the cards to fit more text */
+.experience-details-container .details-container {
+  height: fit-content; /* Allows card to grow with text */
+  padding: 2rem;
+  flex: 1;
+  min-width: 250px; /* Prevents them from getting too skinny */
+}
+
+/* Formatting the text inside the cards */
+.article-container article {
+  display: flex;
+  gap: 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.article-container h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.article-container p {
+  font-size: 1rem;
+  color: rgb(85, 85, 85);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Small gray text for descriptions */
+.text-light {
+  font-size: 0.85rem;
+  color: rgb(120, 120, 120);
+  line-height: 1.4;
+  display: block;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;  /* This adds the gap you wanted */
+    text-align: center;
+}
